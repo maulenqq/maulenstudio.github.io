@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: Montserrat;
+    background: linear-gradient(90deg, #ff0000 -30%, #000000 100%);
+}
+p {
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-family: Montserrat;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: red;
+}
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: darkred;
+}
+
+.sidebar {
+    color: white;
+    background: linear-gradient(270deg, #ff0000 -30%, #000000 100%);
+}
+
+.btn-primary {
+    background: darkred;
+    border-color: darkred;
+}
+
+.card {
+    border-color: #212529;
+}
+
+.card-body {
+    background: #212529;
+    color: white;  
+}
+
+.slide-text {
+    color: white;
+    margin: auto auto;
+}
+
+.next-anim {
+    animation: myAnim 3s linear 1s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 0 50%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
